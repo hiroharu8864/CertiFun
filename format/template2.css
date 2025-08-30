@@ -1,0 +1,137 @@
+.certificate-template-2 {
+  width: 210mm;
+  height: 297mm;
+  padding: 30mm;
+  background: #ffffff;
+  color: #2c3e50;
+  font-family: 'Times New Roman', serif;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #34495e;
+}
+
+.certificate-template-2::before {
+  content: '';
+  position: absolute;
+  top: 15mm;
+  left: 15mm;
+  right: 15mm;
+  bottom: 15mm;
+  border: 2px solid #e74c3c;
+  background: linear-gradient(45deg, transparent 48%, #e74c3c 48%, #e74c3c 52%, transparent 52%);
+  background-size: 20px 20px;
+  opacity: 0.1;
+}
+
+.certificate-template-2 .ornament {
+  position: absolute;
+  top: 20mm;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border: 3px solid #e74c3c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 1;
+}
+
+.certificate-template-2 .ornament::before {
+  content: '★';
+  font-size: 40px;
+  color: #e74c3c;
+}
+
+.certificate-template-2 .title {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 60px 0 20px;
+  color: #2c3e50;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
+.certificate-template-2 .subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #7f8c8d;
+  font-style: italic;
+  z-index: 1;
+}
+
+.certificate-template-2 .recipient-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 25px 0;
+  border-bottom: 3px solid #e74c3c;
+  padding-bottom: 10px;
+  min-width: 350px;
+  z-index: 1;
+}
+
+.certificate-template-2 .achievement {
+  font-size: 16px;
+  margin: 25px 0;
+  line-height: 1.8;
+  color: #34495e;
+  z-index: 1;
+}
+
+.certificate-template-2 .date {
+  font-size: 14px;
+  margin-top: 35px;
+  color: #7f8c8d;
+  z-index: 1;
+}
+
+.certificate-template-2 .seal {
+  position: absolute;
+  bottom: 30mm;
+  right: 30mm;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #e74c3c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e74c3c;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.certificate-template-2 .signature-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.certificate-template-2 .signature {
+  text-align: center;
+  width: 200px;
+}
+
+.certificate-template-2 .signature-line {
+  border-top: 2px solid #34495e;
+  margin-bottom: 8px;
+  padding-top: 25px;
+}
+
+.certificate-template-2 .signature-label {
+  font-size: 12px;
+  color: #7f8c8d;
+  text-transform: uppercase;
+}

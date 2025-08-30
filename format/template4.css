@@ -1,0 +1,115 @@
+.certificate-template-4 {
+  width: 210mm;
+  height: 297mm;
+  padding: 30mm;
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  color: white;
+  font-family: 'Times New Roman', serif;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-template-4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.03) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+  z-index: 0;
+}
+
+.certificate-template-4 .title {
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.certificate-template-4 .subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-style: italic;
+  z-index: 1;
+}
+
+.certificate-template-4 .certification-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFEAA7;
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.certificate-template-4 .recipient-name {
+  font-size: 34px;
+  font-weight: bold;
+  color: #FFF3E0;
+  margin: 25px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  padding-bottom: 12px;
+  min-width: 420px;
+  z-index: 1;
+}
+
+.certificate-template-4 .achievement {
+  font-size: 16px;
+  margin: 25px 0;
+  line-height: 1.7;
+  opacity: 0.95;
+  max-width: 450px;
+  z-index: 1;
+}
+
+.certificate-template-4 .date {
+  font-size: 15px;
+  margin-top: 30px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.certificate-template-4 .signature-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.certificate-template-4 .signature {
+  text-align: center;
+  width: 180px;
+}
+
+.certificate-template-4 .signature-line {
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+  padding-top: 25px;
+}
+
+.certificate-template-4 .signature-label {
+  font-size: 12px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}

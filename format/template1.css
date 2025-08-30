@@ -1,0 +1,102 @@
+.certificate-template-1 {
+  width: 210mm;
+  height: 297mm;
+  padding: 40mm;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-template-1::before {
+  content: '';
+  position: absolute;
+  top: 20mm;
+  left: 20mm;
+  right: 20mm;
+  bottom: 20mm;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.certificate-template-1::after {
+  content: '';
+  position: absolute;
+  top: 25mm;
+  left: 25mm;
+  right: 25mm;
+  bottom: 25mm;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+}
+
+.certificate-template-1 .title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.certificate-template-1 .subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.certificate-template-1 .recipient-name {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFD700;
+  margin: 30px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+  min-width: 400px;
+  z-index: 1;
+}
+
+.certificate-template-1 .achievement {
+  font-size: 18px;
+  margin: 30px 0;
+  line-height: 1.6;
+  z-index: 1;
+}
+
+.certificate-template-1 .date {
+  font-size: 16px;
+  margin-top: 40px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.certificate-template-1 .signature-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.certificate-template-1 .signature {
+  text-align: center;
+  width: 200px;
+}
+
+.certificate-template-1 .signature-line {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.certificate-template-1 .signature-label {
+  font-size: 14px;
+  opacity: 0.8;
+}

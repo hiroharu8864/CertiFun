@@ -1,0 +1,131 @@
+.certificate-template-6 {
+  width: 210mm;
+  height: 297mm;
+  padding: 40mm;
+  background: linear-gradient(135deg, #ff9a56 0%, #ffad56 100%);
+  color: #2c3e50;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-template-6::before {
+  content: '';
+  position: absolute;
+  top: 15mm;
+  left: 15mm;
+  right: 15mm;
+  bottom: 15mm;
+  border: 6px solid #e74c3c;
+  border-radius: 20px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.certificate-template-6 .decorative-element {
+  position: absolute;
+  top: 30mm;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #e74c3c, #c0392b);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.certificate-template-6 .decorative-element::before {
+  content: '🏆';
+  font-size: 50px;
+}
+
+.certificate-template-6 .title {
+  font-size: 44px;
+  font-weight: bold;
+  margin: 70px 0 20px;
+  color: #8b4513;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.certificate-template-6 .subtitle {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #a0522d;
+  font-style: italic;
+  z-index: 1;
+}
+
+.certificate-template-6 .certification-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #d35400;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.certificate-template-6 .recipient-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #8b4513;
+  margin: 25px 0;
+  border-bottom: 4px solid #e74c3c;
+  padding-bottom: 12px;
+  min-width: 380px;
+  z-index: 1;
+}
+
+.certificate-template-6 .achievement {
+  font-size: 16px;
+  margin: 30px 0;
+  line-height: 1.8;
+  color: #5d4e75;
+  max-width: 400px;
+  z-index: 1;
+}
+
+.certificate-template-6 .date {
+  font-size: 14px;
+  margin-top: 35px;
+  color: #7f8c8d;
+  z-index: 1;
+}
+
+.certificate-template-6 .signature-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.certificate-template-6 .signature {
+  text-align: center;
+  width: 200px;
+}
+
+.certificate-template-6 .signature-line {
+  border-top: 3px solid #8b4513;
+  margin-bottom: 10px;
+  padding-top: 25px;
+}
+
+.certificate-template-6 .signature-label {
+  font-size: 12px;
+  color: #8b4513;
+  text-transform: uppercase;
+  font-weight: bold;
+}

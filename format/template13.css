@@ -1,0 +1,210 @@
+.certificate-template-13 {
+  width: 210mm;
+  height: 297mm;
+  padding: 40mm;
+  background: radial-gradient(ellipse at center, #fff8dc 0%, #f5e6d3 100%);
+  color: #2f4f4f;
+  font-family: 'Yu Gothic', 'Hiragino Sans', serif;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-template-13::before {
+  content: '';
+  position: absolute;
+  top: 25mm;
+  left: 25mm;
+  right: 25mm;
+  bottom: 25mm;
+  border: 6px double #8b4513;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(139, 69, 19, 0.05),
+    rgba(139, 69, 19, 0.05) 2px,
+    transparent 2px,
+    transparent 20px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    rgba(139, 69, 19, 0.05),
+    rgba(139, 69, 19, 0.05) 2px,
+    transparent 2px,
+    transparent 20px
+  );
+  z-index: 0;
+}
+
+.certificate-template-13 .wave-top {
+  position: absolute;
+  top: 30mm;
+  left: 30mm;
+  right: 30mm;
+  height: 20px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #4169e1 20%,
+    #4169e1 80%,
+    transparent
+  );
+  clip-path: polygon(
+    0% 100%, 10% 0%, 20% 100%, 30% 0%, 40% 100%, 
+    50% 0%, 60% 100%, 70% 0%, 80% 100%, 90% 0%, 100% 100%
+  );
+  z-index: 1;
+}
+
+.certificate-template-13 .wave-bottom {
+  position: absolute;
+  bottom: 30mm;
+  left: 30mm;
+  right: 30mm;
+  height: 20px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #4169e1 20%,
+    #4169e1 80%,
+    transparent
+  );
+  clip-path: polygon(
+    0% 0%, 10% 100%, 20% 0%, 30% 100%, 40% 0%, 
+    50% 100%, 60% 0%, 70% 100%, 80% 0%, 90% 100%, 100% 0%
+  );
+  z-index: 1;
+}
+
+.certificate-template-13 .cherry-blossom {
+  position: absolute;
+  top: 40mm;
+  left: 40mm;
+  font-size: 25px;
+  color: #ffb6c1;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.certificate-template-13 .maple-leaf {
+  position: absolute;
+  bottom: 40mm;
+  right: 40mm;
+  font-size: 25px;
+  color: #ff4500;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.certificate-template-13 .title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2f4f4f;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.certificate-template-13 .subtitle {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #696969;
+  font-style: italic;
+  z-index: 2;
+}
+
+.certificate-template-13 .certification-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #8b4513;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: 2px solid #daa520;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.certificate-template-13 .recipient-name {
+  font-size: 34px;
+  font-weight: bold;
+  color: #2f4f4f;
+  margin: 30px 0;
+  border-bottom: 3px solid #4169e1;
+  padding-bottom: 15px;
+  min-width: 420px;
+  z-index: 2;
+}
+
+.certificate-template-13 .achievement {
+  font-size: 16px;
+  margin: 30px 0;
+  line-height: 1.8;
+  color: #556b2f;
+  max-width: 460px;
+  z-index: 2;
+}
+
+.certificate-template-13 .date {
+  font-size: 14px;
+  margin-top: 35px;
+  color: #696969;
+  z-index: 2;
+}
+
+.certificate-template-13 .origami-crane {
+  position: absolute;
+  top: 50mm;
+  right: 35mm;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid #ff69b4;
+  transform: rotate(15deg);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.certificate-template-13 .origami-crane::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #ff1493;
+}
+
+.certificate-template-13 .signature-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 45px;
+  z-index: 2;
+}
+
+.certificate-template-13 .signature {
+  text-align: center;
+  width: 200px;
+}
+
+.certificate-template-13 .signature-line {
+  border-top: 2px solid #2f4f4f;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.certificate-template-13 .signature-label {
+  font-size: 12px;
+  color: #2f4f4f;
+  font-weight: bold;
+}
