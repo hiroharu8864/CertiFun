@@ -1,1 +1,81 @@
-.certificate-form {\n  display: flex;\n  flex-direction: column;\n  gap: 1.5rem;\n}\n\n.certificate-form h2 {\n  color: #2c3e50;\n  margin: 0 0 1rem;\n  font-size: 1.5rem;\n  border-bottom: 2px solid #3498db;\n  padding-bottom: 0.5rem;\n}\n\n.form-group {\n  display: flex;\n  flex-direction: column;\n  gap: 0.5rem;\n}\n\n.form-group label {\n  font-weight: 600;\n  color: #34495e;\n  font-size: 0.9rem;\n}\n\n.form-group input,\n.form-group select {\n  padding: 0.75rem;\n  border: 2px solid #e1e8ed;\n  border-radius: 8px;\n  font-size: 1rem;\n  transition: all 0.3s ease;\n}\n\n.form-group input:focus,\n.form-group select:focus {\n  outline: none;\n  border-color: #3498db;\n  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);\n}\n\n.form-group input::placeholder {\n  color: #95a5a6;\n}\n\n.form-group small {\n  color: #7f8c8d;\n  font-size: 0.8rem;\n  font-style: italic;\n}\n\n.form-info {\n  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);\n  padding: 1.5rem;\n  border-radius: 10px;\n  border-left: 4px solid #28a745;\n}\n\n.form-info h3 {\n  margin: 0 0 1rem;\n  color: #2c3e50;\n  font-size: 1.1rem;\n}\n\n.form-info ol {\n  margin: 0;\n  padding-left: 1.2rem;\n  color: #495057;\n  line-height: 1.6;\n}\n\n.form-info li {\n  margin-bottom: 0.5rem;\n}\n\n.form-info li:last-child {\n  margin-bottom: 0;\n}
+.certificate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.certificate-form h2 {
+  color: #e2e8f0;
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #60a5fa;
+  padding-bottom: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 2px solid #475569;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #334155;
+  color: #e2e8f0;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+.form-group small {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.form-info {
+  background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #10b981;
+}
+
+.form-info h3 {
+  margin: 0 0 1rem;
+  color: #e2e8f0;
+  font-size: 1.1rem;
+}
+
+.form-info ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.form-info li {
+  margin-bottom: 0.5rem;
+}
+
+.form-info li:last-child {
+  margin-bottom: 0;
+}

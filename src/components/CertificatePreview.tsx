@@ -25,30 +25,47 @@ const CertificatePreview: React.FC<CertificatePreviewProps> = ({ data }) => {
 
     try {
       const element = certificateRef.current
+      
+      // 高解像度でキャプチャ（300 DPI相当）
+      const scale = 3
+      
       const canvas = await html2canvas(element, {
-        scale: 2,
+        scale: scale,
         useCORS: true,
         backgroundColor: null,
-        width: element.offsetWidth,
-        height: element.offsetHeight
+        logging: false,
+        allowTaint: true,
+        x: 0,
+        y: 0,
+        scrollX: 0,
+        scrollY: 0
       })
 
       const imgData = canvas.toDataURL('image/png')
+      
+      // A4サイズのPDFを作成（余白なし）
       const pdf = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',
-        format: 'a4'
+        format: 'a4',
+        compress: true
       })
 
-      const pdfWidth = pdf.internal.pageSize.getWidth()
-      const pdfHeight = pdf.internal.pageSize.getHeight()
-      const imgWidth = canvas.width
-      const imgHeight = canvas.height
-      const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight)
-      const imgX = (pdfWidth - imgWidth * ratio) / 2
-      const imgY = (pdfHeight - imgHeight * ratio) / 2
-
-      pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth * ratio, imgHeight * ratio)
+      const pdfWidth = pdf.internal.pageSize.getWidth()   // 210mm
+      const pdfHeight = pdf.internal.pageSize.getHeight() // 297mm
+      
+      // 画像をPDF全体に完全にフィット（アスペクト比無視で強制フィット）
+      pdf.addImage(
+        imgData, 
+        'PNG', 
+        0,          // x: 0 (左端)
+        0,          // y: 0 (上端) 
+        pdfWidth,   // width: 210mm (PDF全幅)
+        pdfHeight,  // height: 297mm (PDF全高)
+        undefined,  // alias
+        'FAST'      // compression
+      )
+      
       pdf.save(`認定証_${data.recipientName}_${new Date().toISOString().split('T')[0]}.pdf`)
     } catch (error) {
       console.error('PDF生成エラー:', error)

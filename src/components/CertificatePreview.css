@@ -12,15 +12,15 @@
 }
 
 .preview-header h2 {
-  color: #2c3e50;
+  color: #e2e8f0;
   margin: 0;
   font-size: 1.5rem;
-  border-bottom: 2px solid #e74c3c;
+  border-bottom: 2px solid #ef4444;
   padding-bottom: 0.5rem;
 }
 
 .download-btn {
-  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -29,7 +29,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .download-btn:hover:not(:disabled) {
@@ -38,7 +38,7 @@
 }
 
 .download-btn:disabled {
-  background: #6c757d;
+  background: #4b5563;
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
@@ -48,9 +48,9 @@
   display: flex;
   justify-content: center;
   padding: 1rem;
-  background: #f8f9fa;
+  background: #374151;
   border-radius: 10px;
-  border: 2px dashed #dee2e6;
+  border: 2px dashed #6b7280;
   min-height: 300px;
   align-items: center;
 }
@@ -66,10 +66,10 @@
 .preview-info {
   text-align: center;
   padding: 1rem;
-  background: #d1ecf1;
-  border: 1px solid #bee5eb;
+  background: #1f2937;
+  border: 1px solid #374151;
   border-radius: 6px;
-  color: #0c5460;
+  color: #d1d5db;
   font-size: 0.9rem;
 }
 
